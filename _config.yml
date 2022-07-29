@@ -19,22 +19,19 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Netdev Jekyll Example
+
+description: Jekyll Implementation example for the News section of the Netdev Conf event webpage
+
+author: Gustavo Resende Lopes
+
 email: gustavo.lopes@expertisesolutions.com.br
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://blog.expertise.dev/jekyll-sample-netdev.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-<<<<<<< HEAD
-theme: Tactile
-=======
 theme: jekyll-theme-tactile
->>>>>>> 236562e2f37287a8e5104414844ff5fa27b7b509
 plugins:
   - jekyll-feed
 
