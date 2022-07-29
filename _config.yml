@@ -30,7 +30,11 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
+<<<<<<< HEAD
 theme: Tactile
+=======
+theme: jekyll-theme-tactile
+>>>>>>> 236562e2f37287a8e5104414844ff5fa27b7b509
 plugins:
   - jekyll-feed
 
