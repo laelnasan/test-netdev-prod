@@ -137,7 +137,7 @@ pre code.hljs {
   }
   // Nav menu
   .navigation-wrapper {
-  	width: 56em;
+	width: 56em;
 	margin-left: auto;
 	margin-right: auto;
     @include clearfix;
@@ -145,22 +145,23 @@ pre code.hljs {
 	font-family: $title-font-family;
   }
   nav {
+	display: flex;
+	justify-content: space-around;
     float: none;
     padding: .5em 0;
     @include media ($tablet) {
-      float: right;
       line-height: 1.5em;
     }
   }
   ul.navigation-menu {
-    clear: both;
-    display: none;
+    display: flex;
+		justify-content: space-around;
+	clear: both;
     margin: 0 auto;
     overflow: visible;
     padding: 0;
     width: 100%;
     @include media ($tablet) {
-      display: block;
       margin: 0;
       padding: 0;
     }
