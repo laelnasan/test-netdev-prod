@@ -1,18 +1,16 @@
+<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
+  <div class="scrim {% if site.cover %}has-cover{% endif %}">
+  </div>
+</div>
+
 <header class="navigation" role="banner">
   <div class="navigation-wrapper">
-    <a href="{{ site.baseurl }}/" class="logo">
-      {% if site.logo %}
-      <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
-      {% else %}
-      <span>{{ site.title }}</span>
-      {% endif %}
-    </a>
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
       <i class="fa fa-bars"></i>
     </a>
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
-				{% include nav_links.html %}
+        {% include nav_links.html %}
       </ul>
     </nav>
   </div>

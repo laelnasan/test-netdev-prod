@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
+  font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $heading-line-height;
   margin: 0 0 $base-font-size;
@@ -38,6 +38,29 @@ h6 {
 	font-size: modular-scale(-2);
 }
 
+hnavbar {
+  htitle {
+    font-family: $title-font-family;
+    font-size: modular-scale(-1);
+    line-height: $heading-line-height;
+    margin: 0 0 $base-font-size;
+    margin: 0 0 rem($base-font-size);
+  }
+}
+
+htitle {
+  font-family: $title-font-family;
+  font-size: 1.9em;
+  line-height: 1;
+}
+
+hpost {
+  font-family: $post-font-family;
+  font-size: 1.08em;
+  line-height: 1.25;
+  margin: 0 0 1.5em;
+}
+
 p {
   margin: 0 0 $small-spacing;
 }
@@ -51,6 +74,24 @@ a {
   &:focus,
   &:hover {
     color: darken($action-color, 10%);
+    text-decoration: underline;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+title-a {
+  color: $title-color;
+  text-decoration: none;
+  // transition: color 0.1s linear;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: lighten($title-color, 10%);
     text-decoration: underline;
   }
 

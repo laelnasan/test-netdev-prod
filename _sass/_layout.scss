@@ -113,11 +113,9 @@ pre code.hljs {
 *	Header
 */
 .navigation {
-	box-shadow: 0 2px $highlight-color;
+	box-shadow: 0 2px $black;
 	padding: 0 1em;
 	margin: 0;
-	// Remove this to make header scrollable again
-	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -139,28 +137,16 @@ pre code.hljs {
   }
   // Nav menu
   .navigation-wrapper {
-  	@include outer-container;
+  	width: 56em;
+	margin-left: auto;
+	margin-right: auto;
     @include clearfix;
     position: relative;
-  }
-  .logo {
-    float: left;
-    height: 4em;
-    @include media ($tablet) {
-    	padding-left: $em-base;
-    }
-    img {
-      max-height: 2.5em;
-      margin-top: 0.75em;
-      padding-right: 1em;
-    }
-    span {
-    	font-size: 1.25em;
-    }
+	font-family: $title-font-family;
   }
   nav {
     float: none;
-    padding: 1.25em 0;
+    padding: .5em 0;
     @include media ($tablet) {
       float: right;
       line-height: 1.5em;
@@ -199,7 +185,7 @@ pre code.hljs {
   	a {
 	    display: inline-block;
 	    @include media ($tablet) {
-	      padding-right: 1.5em;
+	      padding-right: .35em;
 	    }
 	  }
 	  &:last-child a {

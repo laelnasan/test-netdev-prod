@@ -1,8 +1,12 @@
 // Google Fonts
 @import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,700,300|Roboto:400,700,300|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300);
+@import url(//fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap);
+@import url(//fonts.googleapis.com/css2?family=Raleway&display=swap);
 
 // Typography
 $base-font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; // $helvetica;
+$title-font-family: "Share Tech Mono", sans-serif;
+$post-font-family: "Raleway", sans-serif;
 $heading-font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", "Arial", sans-serif; // $base-font-family;
 
 // Font Sizes
@@ -22,7 +26,7 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$dark-gray: #333;
+$black: #000;
 $medium-gray: #999;
 $light-gray: #ddd;
 $white: #fff;
@@ -39,7 +43,8 @@ $bc-red: #bc0000;
 
 // Font Colors
 $base-background-color: #fff;
-$base-font-color: $dark-gray;
+$base-font-color: $black;
+$title-color: $black;
 $action-color: $blue;
 $highlight-color: tint($action-color, 33%);
 

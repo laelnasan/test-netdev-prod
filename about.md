@@ -1,8 +1,9 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: About Us
+permalink: /about-us/
 main_nav: true
+index: 10
 ---
 
 ![alt text]({{ site.baseurl }}/assets/profile-placeholder.gif "Profile Picture"){:.profile}
