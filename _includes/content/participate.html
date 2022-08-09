@@ -1,0 +1,201 @@
+<div class="main-content">
+    <h1>Overview</h1>
+    <p>The Netdev conference focuses on networking based on Linux kernel
+      and its associated user APIs.</p>
+
+    <p>Netdev 0x16 (Netdev “twenty-two”) will be in Lisbon Portugal, starting October 24th, 2022.
+      More details will be announced soon.
+    </p>
+    <!-- <ul>
+        <h2>
+            <li><a href="#submission">Submissions Overview</a></li>
+            <li><a href="#types">Submission Types</a></li>
+            <li><a href="#labels">Submission Labels</a></li>
+            <li><a href="#proposals">Submitting proposals</a></li>
+            <li><a href="pc_review.html">Submission Work<span style="font-family:Arial">f</span>low</a></li>
+            <li><a href="about-us.html#Committees">Committees</a></li>
+            <li><a href="#info">Other Info</a></li>
+        </h2>
+    </ul> -->
+
+    <h2><a name="submission" href="#submission" class="no-link-style">Submissions Overview</a></h2>
+
+    
+
+    <p>Netdev Society is excited to be accepting submissions for Netdev 0x16.
+      We encourage early submissions incrementally rather than wait to
+      submit at the last minute before the deadline.</p>
+
+    <p>Submissions will be accepted until the 7th of September, 2022.
+      The submitters will be notified whether their submission was accepted
+      or rejected by 15th of September, 2022.
+      Slides and papers (for talks) are expected by 7th of September, 2022.</p>
+
+    <p>The Netdev Society invites proposals for conference
+      topics in the area of Linux kernel and user space
+      networking. Please stay within the relevant topic
+      focus and tie to FOSS Linux networking. In other
+      words if you are just <i>using Linux to boot your
+        proprietary SDK-based system</i> then your submission
+      will probably not be accepted. <strong>Also note
+        that <i>we do not accept submissions of recycled talks</i></strong>.</p>
+
+    <p><u>Netdev Society strives for objectivity in reviewing submissions.</u>
+      Submissions are reviewed in a double blind review solely based on
+      their technical merit and suitability for the conference.
+      Any conflict of interest is cleared
+      upfront and no reviewer is able to see the submitters
+      name or organization.</p>
+
+    <p>Our Program Committee is listed here:<br>
+      <a href="about-us.html#Committees">https://netdevconf.info/0x16/about-us.html#Committees</a>
+    </p>
+
+    <p>For Netdev 0x16 the following is a sample space of topics of interest:</p>
+    <ul>
+      <li>Machine learning as related to networking</li>
+      <li>Communication patterns</li>
+      <li>RDMA techniques</li>
+      <li>networking vs interface effects</li>
+      <li>Network Analytics</li>
+      <li>Mobile Edge Computing</li>
+      <li>User space infrastructures (example config tooling, L2/3 like FRR, DNS, etc)</li>
+      <li>XDP+EBPF</li>
+      <li>DDOS related</li>
+      <li>IoT</li>
+      <li>Wireless</li>
+      <li>Driver enhancements in Linux</li>
+      <li>Performance analysis and improvement</li>
+      <li>Networking hardware and offload</li>
+      <li>Netfilter</li>
+      <li>Traffic control</li>
+      <li>Protocol development, implementation, and optimization</li>
+      <li>L2/3</li>
+      <li>Transport: TCP, QUIC, UDP</li>
+      <li>Security</li>
+    </ul>
+
+    <p>Feel free to step out of these boundaries if you feel
+      your topic is still relevant.</p>
+
+    <h2><a name="types" href="#types" class="no-link-style">Submission Types</a></h2>
+    <ol>
+      <li><strong>Talk</strong> - One or more of authors elaborating on a proposal within
+        a 30 minute session. A 2-10 pages (not including references) paper submission
+        of the talk is required in PDF format. Talks can be labelled as
+        "Nuts-and-bolts" as well as "moonshot" submissions. Refer to label definitions
+        for insights.
+      </li>
+      <li><strong>Workshops</strong> - Workshops are always "Nuts-and-bolts". Workshops are proposed
+        by one or more chairs. workshop chairs(s) should coordinate
+        workshop participants' topics in advance and lead the session.
+        Topics should be extensions of mailing list discussions. The meeting
+        will typically take place in a round-table format. Length of the
+        workshop can vary (within reason) and no slides nor paper(s) are
+        required; however, this requirement may be overridden by the
+        chair(s) of the workshop. Workshops could also be deep-dive sessions
+        where domain experts would flock to discuss details of a specific
+        topic.
+      </li>
+      <li><strong>Tutorial</strong> - Tutorials are educational in nature and fit under
+        the "hands-on" label. These sessions will be held in classroom style. Two types
+        of tutorials may be accepted:
+        <ol>
+          <li>Instructor-led sessions - minimum 1 hour long and not to
+            exceed 1.5 hours. The instructor will go over the technology either through
+            code review or execution and interact with the attendees.
+          </li>
+          <li>Student-participation session. Minimum 2 hours upto a
+            maximum 3 hours. Preference for such sessions is to have hands-on user
+            participation; we encourage tutors to prepare VMs or container images for this
+            activity.
+          </li>
+        </ol>
+      </li>
+    </ol>
+
+    <h2><a name="labels" href="#labels" class="no-link-style">Submission Labels</a></h2>
+    <p>Submission labels are based on the observation that there is a natural
+      3-step progression of a technology over time consisting of 1) inception 2)
+      development and 3) deployment. The labels are aligned to these steps:</p>
+    <ul>
+      <li><strong>Moonshot</strong> - These are sessions about the next big thing in
+        Linux kernel networking. If you are thinking about new and exciting technology
+        or a big idea and want feedback, then consider submitting a "moonshot" proposal.
+        As an example, the first time XDP was presented in Netdev it would have
+        probably qualified as a "moonshot".
+      </li>
+      <li><strong>Nuts and bolts</strong> - These are presentations that might take a
+        deep dive into implementation and development of technology in Linux kernel
+        networking. If you have well tested ideas and code that you would like to push
+        forward inclusion and adoption by the community (kernel/user space) then
+        consider submitting a "nuts and bolts" proposal. It is also acceptable in a
+        "nuts and bolts" session to have a talk to document how things work under the
+        covers especially if they are already in deployment in the kernel/user space
+        but have never been documented. An example of a "nuts and bolts" session is DSA
+        which was first described in Netdev 2.1.
+      </li>
+      <li><strong>Hands on</strong> - These are more what traditionally has been thought
+        of as tutorials. These sessions focus on configuring and using Linux kernel
+        networking technologies and features. This is an opportunity to share
+        deployment experience and wisdom about how to best employ kernel technology. To
+        provide a truly "hands on" experience, there should be real examples and case
+        studies presented that the audience could try out in real time. Previous Netdev
+        sessions on iptables are good examples of "hands on" sessions.
+      </li>
+    </ul>
+
+    <p>When you make a submission, make sure you indicate what label best applies.</p>
+
+
+
+    <h2><a name="proposals" href="#proposals" class="no-link-style">Submitting proposals</a></h2>
+    <p>Proposal submissions guidelines: </p>
+
+    <ol>
+      <li>
+        Create a new account on: <a href="https://0x16.netdevconf.info">https://0x16.netdevconf.info</a>
+      </li>
+      <li>
+        Check your email for a verification link.
+      </li>
+      <li>
+        Log into the submissions site using your new account (same link as from step 1)
+      </li>
+      <li>
+        Fill in your name, change your password, and add any conflicts of interest that you're aware of at the bottom. Save your changes with the button at the bottom of the page.
+      </li>
+      <li>
+        You will now be on the front page. Next to "Submissions", click "New submission", and fill out the form to submit your proposal.
+      </li>
+      <li>
+        You will receive an email acknowledging that you submission has been entered into the system.
+      </li>
+    </ol>
+
+    <p>In the unlikely case you don't receive any email after
+      registration or submission, please contact the Administrator at: admin@netdevconf.info</p>
+
+    <p>We provide one registration coupon per submission that
+      is accepted. You may go ahead and register for the conference.
+      If you're already registered then you will be refunded
+      as a speaker. If you're not registered already then
+      your registration fee will be waived. Please remember
+      that missed deadline could lead to your submitted
+      session(s) being cancelled.</p>
+
+    <p>Once your proposal is accepted, please prepare your paper based on <a href="../netdevconf-template.odt">odt template</a>
+      or <a href="../ISEA-Latex.zip">latex one</a>.</p>
+
+    <p>Accepted talk presenter(s) should submit a draft PDF
+      version of slides and papers in the submission
+      page on the same site as registration by the deadline of September 7th 2022.</p>
+
+    <h2><a name="info" href="#info" class="no-link-style">Other Info</a></h2>
+    <ul>
+      <li>Bursaries <a href="bursaries.html">info</a></li>
+      <li>Ombudsman <a href="ombudsman.html">info</a></li>
+      <li>Workflow <a href="pc_review.html">info</a></li>
+    </ul><br>
+
+  </div>
