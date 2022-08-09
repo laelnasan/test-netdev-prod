@@ -6,4 +6,16 @@ main_nav: true
 pagination:
 enabled: true
 ---
-<h2 style="margin-left: 25%">Click on the News section for the sample.</h2>
+
+<div class="home news-container">
+
+    <div class="left-panel">
+        {% include left-side.html %}
+    </div>
+    <div class="wrapper">
+        {% include home-posts.html %}
+    </div>
+    <div class="right-panel">
+        {% include right-side.html %}
+    </div>
+</div>

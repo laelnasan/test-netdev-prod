@@ -1,0 +1,205 @@
+<ul class="post-list">
+    <li>
+        <htitle>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Bronze Sponsor, ZEVENET</a>
+        </htitle>
+        <section class="post-excerpt" itemprop="description">
+            <hpost>
+                We support NetDev based on our belief in the network and architecture optimization to guarantee
+                the
+                continuity of the services by ensuring the high availability, massively scalable, high
+                performance and
+                security with the most cutting-edge, easy user experience and open source technology for the
+                activity of our
+                worldwide users.<br>
+            </hpost>
+        </section>
+        <section class="post-meta">
+            <div class="post-date">2022-07-26</div>
+        </section>
+    </li>
+    <hr>
+
+    <li>
+        <htitle>
+            <a class="post-link" href="./">Bronze Sponsor, Mojatatu</a>
+        </htitle>
+        <section class="post-excerpt" itemprop="description">
+            <hpost>
+                Mojatatu believes in giving back to the Linux netdev community and has supported every single
+                Netdev conf
+                since inception. Mojatatu continues to pioneer in next generation SDN.<br>
+            </hpost>
+        </section>
+        <section class="post-meta">
+            <div class="post-date">2022-07-21</div>
+        </section>
+    </li>
+    <hr>
+
+    <li>
+        <htitle>
+            <a class="post-link" href="./">Platinum Sponsor, Google</a>
+        </htitle>
+        <section class="post-excerpt" itemprop="description">
+            <hpost>
+                Google believes that open source is good for everyone.<br>
+
+                By being open and freely available, it enables and encourages collaboration and the development
+                of
+                technology.
+            </hpost>
+        </section>
+        <section class="post-meta">
+            <div class="post-date">2022-07-12</div>
+        </section>
+    </li>
+    <hr>
+
+    <li>
+        <htitle>
+            <a class="post-link" href="./">Media Sponsor, LWN.net</a>
+        </htitle>
+        <section class="post-excerpt" itemprop="description">
+            <hpost>
+                LWN.net aims to be the premier news and information source for the free software community. We
+                provide
+                comprehensive coverage of the development of the Linux kernel and other open-source software
+                projects,
+                information on security issues and concerns, as well as other topics relevant to those
+                communities. The
+                LWN.net Weekly Edition is our weekly summary of what has gone on, while the front page is
+                updated frequently
+                with news of interest from those worlds.
+            </hpost>
+        </section>
+        <section class="post-meta">
+            <div class="post-date">2022-07-08</div>
+        </section>
+    </li>
+    <hr>
+
+    <li>
+        <htitle>
+            <a class="post-link" href="./">Platinum Sponsor, Juniper Networks</a>
+        </htitle>
+        <section class="post-excerpt" itemprop="description">
+            <hpost>
+                Juniper Networks simplifies the complexities of networking with products, solutions and services
+                in the
+                cloud era to transform the way we connect, work and live. We remove the traditional constraints
+                of
+                networking to enable our customers and partners to deliver automated, scalable and secure
+                networks that
+                connect the world.<br>
+
+                For example, Junos routing offers quality, feature rich routing functionality in a container,
+                delivering
+                best-of-breed routing with One Junos Experience across the cloud on routers, servers or any
+                Linux-based
+                device.
+            </hpost>
+        </section>
+        <section class="post-meta">
+            <div class="post-date">2022-06-30</div>
+        </section>
+    </li>
+    <hr>
+
+    <li>
+        <htitle>
+            <a class="post-link" href="./">Bronze Sponsor, Tempesta</a>
+        </htitle>
+        <section class="post-excerpt" itemprop="description">
+            <hpost>
+                Tempesta Technologies develops Tempesta FW (https://github.com/tempesta-tech/tempesta), an open
+                source
+                hybrid of a Web accelerator and a multi-layer firewall. It's tightly coupled with the Linux
+                TCP/IP stack and
+                employs cutting edge technologies to efficiently block DDoS and web attacks and provide
+                outstanding web
+                application performance in normal operation.
+            </hpost>
+        </section>
+        <section class="post-meta">
+            <div class="post-date">2022-06-24</div>
+        </section>
+    </li>
+    <hr>
+
+    <li>
+        <htitle>
+            <a class="post-link" href="./">Silver Sponsor, AMD</a>
+        </htitle>
+        <section class="post-excerpt" itemprop="description">
+            <hpost>
+                For applications to scale, networking is very important. <br>
+                AMD is pleased to help enable NetDev collaboration events.
+            </hpost>
+        </section>
+        <section class="post-meta">
+            <div class="post-date">2022-06-15</div>
+        </section>
+    </li>
+    <hr>
+
+    <li>
+        <htitle>
+            <a class="post-link" href="./">Netdev 0x16 Call for Submissions</a>
+        </htitle>
+        <section class="post-excerpt" itemprop="description">
+            <hpost>
+                We are pleased to announce the opening of Call For Submissions(CFS) for Netdev 0x16. <br>
+
+                For overview of topics, submissions and requirements please visit: <br>
+                https://netdevconf.info/0x16/submit-proposal.html <br>
+
+                For submitted sessions, we employ a blind review process carried out by the Program Committee.
+                <br>
+                Please refer to: <br>
+                https://www.netdevconf.info/0x16/pc_review.html<br>
+
+                Important dates: <br>
+                Closing of CFS: Wed, Sept. 7, 2022 <br>
+                Notification by: Thu, Sept. 15, 2022 <br>
+                Conference dates: Oct 24th - 28th, 2022<br>
+            </hpost>
+        </section>
+        <section class="post-meta">
+            <div class="post-date">2022-06-07</div>
+        </section>
+    </li>
+    <hr>
+
+
+    {% for post in paginator.posts %}
+
+    <li>
+        <htitle>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </htitle>
+        <section class="post-excerpt" itemprop="description">
+            <hpost>{{ post.content | strip_html | truncatewords: 80 }}</hpost>
+        </section>
+        <section class="post-meta">
+            <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+            <div class="post-categories">
+                {% if post.categories.size > 0 %}in {% for cat in post.categories %}
+                {% if site.jekyll-archives %}
+                <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last ==
+                false %}, {%
+                endif %}
+                {% else %}
+                <a href="{{ site.baseurl }}/posts/#{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last ==
+                false %}, {%
+                endif %}
+                {% endif %}
+                {% endfor %}{% endif %}
+            </div>
+        </section>
+    </li>
+    {% if forloop.last == false %}
+    <hr>
+    {% endif %}
+    {% endfor %}
+</ul>
