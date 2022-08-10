@@ -19,56 +19,9 @@
     src: local('Tinos Bold'), local('Tinos-Bold'), url(https://fonts.gstatic.com/s/tinos/v9/3YkJL-56dKLNbFKy5GXN6PesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
 }
 
-.side-block {
-    background-color: #f6f6f2;
-    border-color: #f9f9f9;
-    width: auto;
-    margin: 0 0 20px;
-}
-
-.side-content {
-    padding: 15px 20px 15px 20px;
-}
-
-.side-content p {
-    font-size: 1em;
-    line-height: 1.4;
-    margin: 0 0 3px;
-}
-
-.side-content h2 {
-    margin: 0 0 0.5em;
-    border-bottom: 1px solid #192322;
-    padding-bottom: 5px;
-    font-size: 1.15em;
-    line-height: 1.2;
-}
-
-.side-content ul {
-    padding-left: 15px;
-}
-
-.btn-wrapper {
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.btn {
-    font-family: "Share Tech Mono";
-}
-
-table.deadlines tr td {
-    border-bottom: 1px solid black;
-}
-
-// -- x -- //
-
-/*-- netdev 2.2 css --*/
-
-/* based on http://www.colourlovers.com/palette/1707007/Highway_2_new_things */
-
 body {
     line-height: 2.5;
+    font-size: 87.5%;
     word-wrap: break-word;
     margin: 0;
     padding: 0;
@@ -120,6 +73,12 @@ h6 {
     margin: 1em 0 0.5em;
     font-weight: inherit;
     font-family: "Share Tech Mono";
+}
+
+@font-face {
+    font-family: "Share Tech Mono";
+    src: local("Share Tech Mono"), local("ShareTechMono-Regular"),
+        url(../fonts/Share-TechMono.ttf) format("truetype");
 }
 
 @media screen and (min-width: 480px) {
@@ -326,8 +285,7 @@ h6 {
     }
 
     .footer-content {
-        display: flex;
-        justify-content: center;
+        margin-left: 300px;
         font-size: 0.85em;
         font-family: "Share Tech Mono";
     }
@@ -408,6 +366,7 @@ h6 {
         padding: 3px 0px 3px 0px;
         margin: 0px 0px 0px 0px;
         font-family: "Share Tech Mono";
+        src: url(../assets/fonts/Share-TechMono.ttf);
     }
 
     #program li.slot {
@@ -550,21 +509,21 @@ h6 {
     }
 
     /* #program div.slot-break p {
-  } */
+    } */
 
     #program .interaction {
         color: #b3b4b3;
     }
 
     /*
-  #program div.slot-am {
-    height: 186px;
-  }
-
-  #program div.slot-day3-pm {
-    height: 64px;
-  }
-*/
+    #program div.slot-am {
+      height: 186px;
+    }
+  
+    #program div.slot-day3-pm {
+      height: 64px;
+    }
+  */
     #program .other {
         background-color: #d1d1d1;
     }
@@ -732,6 +691,7 @@ h6 {
     h1.page-title {
         font-size: 1.9em;
         font-family: "Share Tech Mono";
+        src: url(../fonts/Share-TechMono.ttf);
         line-height: 1;
     }
 
@@ -818,19 +778,19 @@ a.no-link-colour {
 }
 
 /* a .no-link-style .session-article {
-	color: inherit;
-	text-decoration: none;
-}
-
-a:visited .no-link-style .session-article {
-	color: inherit;
-	text-decoration: none;
-} */
+      color: inherit;
+      text-decoration: none;
+  }
+  
+  a:visited .no-link-style .session-article {
+      color: inherit;
+      text-decoration: none;
+  } */
 
 
 /*---
-  Register form - register.html
----*/
+    Register form - register.html
+  ---*/
 
 table.register-form-table {
     max-width: 506px;
@@ -906,19 +866,19 @@ table.register-form-table td p {
 }
 
 /* table.register-form-table td .register-header {
-  padding-bottom: 10px;
-} */
+    padding-bottom: 10px;
+  } */
 
 /*---
-  End Register form
----*/
+    End Register form
+  ---*/
 
 
 /* .schedule-area {
-  max-width: 1200px;
-  left: 0px;
-  margin-left: -50px;
-} */
+    max-width: 1200px;
+    left: 0px;
+    margin-left: -50px;
+  } */
 
 .news-article {
     max-width: 29em;
@@ -932,540 +892,4 @@ table.register-form-table td p {
 #sessionDescriptionContent {
     white-space: pre-wrap;
     max-width: 27em;
-}
-
-// -- phone -- //
-
-
-/* hide logo image for phone on large window. */
-div#logo-phone {
-    display: none;
-}
-
-@media screen and (max-width:479px) {
-    /*-- netdev 2.2 small screen css --*/
-
-    /* toggle menu */
-    /* ref: http://weboook.blog22.fc2.com/blog-entry-392.html */
-    #menu {
-        width: 100%;
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    ul.navi li {
-        display: block;
-        float: left;
-        width: 12.5%;
-        margin: 0;
-        padding: 0;
-        font-family: 'Share Tech Mono';
-    }
-
-    ul.navi li a {
-        display: block;
-        padding: 12px 0 10px;
-        background: #333;
-        color: #fff;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    ul.navi li a:hover {
-        background: #444;
-    }
-
-    #toggle {
-        display: none;
-    }
-
-    ul.navi {
-        display: none;
-    }
-
-    ul.navi li {
-        width: 100%;
-    }
-
-    #toggle {
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 48px;
-        background: #222;
-    }
-
-    #toggle a {
-        display: block;
-        position: relative;
-        padding: 12px 0 10px;
-        border-bottom: 0px solid #fff;
-        color: #fff;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    #toggle:before {
-        display: block;
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 10px;
-        width: 25px;
-        height: 1px;
-        margin-top: -5px;
-        background: #fff;
-    }
-
-    #toggle:after {
-        display: block;
-        content: "";
-        position: absolute;
-        top: 75%;
-        left: 10px;
-        width: 25px;
-        height: 1px;
-        margin-top: -5px;
-        background: #fff;
-    }
-
-
-
-    /* .wrapper {
-
-} */
-
-    /* div#header {
-} */
-
-    div#logo {
-        display: none;
-    }
-
-    div#logo-phone {
-        display: inline;
-    }
-
-    #logo-phone img {
-        width: 100%;
-        margin: 0px 0px 0px 0px;
-    }
-
-    div#content {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    div#main-section {
-        /* main content */
-        width: 100%;
-        float: left;
-    }
-
-    .main-content {
-        padding: 0px 20px 0px 20px;
-    }
-
-    .main-content p {
-        font-size: 1.08em;
-        margin: 0 0 1.5em;
-    }
-
-    .main-content ul li {
-        font-size: 1.1em;
-        list-style: disc;
-    }
-
-
-    .main-content iframe {
-        width: 100% !important;
-    }
-
-    .main-content a img {
-        width: 100%;
-    }
-
-
-
-    div#left-side,
-    div#right-side {
-        display: none;
-    }
-
-    div#footer {
-        width: auto;
-        margin: 0;
-        padding: 0;
-        background-color: #292929;
-        color: rgb(255, 255, 255);
-    }
-
-    h2.footer-title {
-        margin: 0;
-        font-size: 1.2em;
-        border-bottom: 1px solid #555;
-        margin-bottom: 10px;
-        color: #c5c5c5;
-    }
-
-    h3.footer-title {
-        margin: 0;
-        padding-bottom: 5px;
-        font-size: 1.1em;
-        margin-bottom: 10px;
-        color: #c5c5c5;
-    }
-
-    .sponso {
-        padding: 15px 10px 15px;
-    }
-
-    .sponso img {
-        padding: 0px 6px 0px;
-    }
-
-
-    .footer-block {
-        width: 95%;
-        margin: 0px 10px 10px 10px;
-        border: 1px solid #444;
-        float: left;
-    }
-
-    .footer-content {
-        margin: 0;
-        font-size: 0.85em;
-        font-family: 'Share Tech Mono';
-    }
-
-    .footer-content h2 {
-        margin: 0 0 0.5em;
-        border-bottom: 1px solid #555;
-        padding-bottom: 5px;
-        font-size: 1em;
-        line-height: 1.2;
-        color: #c5c5c5;
-    }
-
-    .footer-content p {
-        color: #c0c0c0;
-        margin: 0px;
-    }
-
-    .footer-content a:link,
-    .footer-content a:visited {
-        color: #c0c0c0;
-        text-decoration: none;
-    }
-
-    .footer-content a:hover {
-        text-decoration: underline;
-    }
-
-
-
-    .sponso-area {
-        margin: 10px 0px 30px;
-    }
-
-    .sponso-area h3 {
-        margin: 0;
-        padding-bottom: 5px;
-        font-size: 1.1em;
-        margin-bottom: 2px;
-        color: #c5c5c5;
-    }
-
-    .sponso-area img,
-    .sponso-area-line1 img,
-    .sponso-area-line2 img {
-        margin: 10px 0px 30px;
-        display: block;
-        clear: both;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* accepted session */
-
-    .session-article {
-
-        margin: 10px 10px 10px 10px;
-
-        border-bottom: solid 1px #c0c0c0;
-
-    }
-
-    .for-onclick {
-        text-decoration: none;
-        color: #2b8cc1;
-        background-color: #f6f6f2;
-        padding: 10px 10px 10px 10px;
-        text-decoration: underline;
-    }
-
-    .for-onclick:hover,
-    .for-onclick:active,
-    .for-onclick:focus {
-        cursor: pointer;
-        text-decoration: underline;
-        color: #1aaaf6;
-    }
-
-    h2.session-title {
-        font-family: 'Raleway', sans-serif;
-        font-weight: bold;
-        font-size: 1.4em;
-    }
-
-    h3.session-title {
-        font-family: 'Raleway', sans-serif;
-        font-weight: bold;
-        font-size: 1.1em;
-        margin: 0 10px 0 0;
-    }
-
-    .session-article :link,
-    .session-article a:visited {
-        text-decoration: underline;
-        color: #333;
-    }
-
-    .session-article a:hover,
-    .session-article a:active,
-    .session-article a:focus {
-        text-decoration: underline;
-        color: #777;
-    }
-
-    .session-article p.speaker {
-        text-align: right;
-        margin: 0px 10px 0px 0px;
-    }
-
-
-
-    /* program schedule */
-
-    #program {
-        margin: 0px 10px 0px 10px;
-    }
-
-
-    #program ul {
-        width: 100%;
-        height: 100%;
-        float: left;
-        padding: 0 0 0 0;
-        margin: 5px 0px 5px 0px;
-        border: solid 1px #a0a0a0;
-    }
-
-
-    #program li {
-        list-style: none;
-        padding: 0px 0px 0px 0px;
-    }
-
-    #program li.location {
-        font-size: 1.2em;
-        text-align: center;
-        background-color: #dadada;
-        padding: 3px 0px 3px 0px;
-        margin: 0px 0px 0px 0px;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    #program li.slot {
-        font-size: 1.1em;
-        font-family: 'Raleway', sans-serif;
-        height: 100%;
-    }
-
-    #program li.slot p.time {
-        border-color: #f9f9f9;
-        font-family: 'Raleway', sans-serif;
-        margin: 0;
-        padding: 4px 0px 0px 15px;
-        border-top: 1px solid #a0a0a0;
-        height: 30px;
-    }
-
-    #program li.slot p.title {
-        padding: 11px 10px 10px 15px;
-        margin: 0;
-    }
-
-    #program li.slot p.title-center {
-        padding: 8px 0px 7px 0px;
-        margin: 0px;
-        text-align: center;
-    }
-
-    #program li.slot p.speaker {
-        text-align: right;
-        padding: 0px 10px 10px 15px;
-        margin: 0;
-    }
-
-    #program li.phone-disappear {
-        display: none;
-    }
-
-    #program div.slot-talk {
-        /* p.time height is 20px */
-        height: 40px;
-        /* = 65px (including title) */
-        vertical-align: middle;
-        display: table-cell;
-    }
-
-
-    #program div.slot-break {
-        /* p.title height is 20px */
-        height: 40px;
-        /* 65px (including title), twice of slot-min-30 */
-        vertical-align: middle;
-        /* display: block; */
-    }
-
-    #program .other {
-        background-color: #f6f6f2;
-    }
-
-    #program .talk {
-        background-color: #ffead6;
-    }
-
-    #program .workshop {
-        background-color: #eaeaff;
-    }
-
-    #program .tutorial {
-        background-color: #ffe0ff;
-    }
-
-    #program .bof {
-        background-color: #eaffea;
-    }
-
-    #program .keynote {
-        background-color: #ffffd1;
-    }
-
-    .language {
-        text-align: right;
-        color: #c5c5c5;
-        font-size: 0.9em;
-        font-family: 'Share Tech Mono';
-    }
-
-    div.language a:link,
-    div.language a:hover,
-    div.language a:focus,
-    div.language a:active,
-    div.language a:visited {
-        color: #c0c0c0;
-    }
-
-    img.flyer {
-        width: 480px;
-        border: solid 1px #f0f0f0;
-        margin: 0 0 50px 0;
-    }
-
-    /*The filtering classes*/
-    div#session-filtering {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-    }
-
-    #session-filtering ul.filtering li {
-        font-size: 1em;
-        list-style: none;
-    }
-
-    ul.filtering {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        margin-left: 10px;
-    }
-
-    ul.filtering li {
-        float: left;
-        text-align: center;
-    }
-
-    ul.filtering li a {
-        display: block;
-        padding: 0 8px 0 8px;
-        font-size: 1.15em;
-        color: #3b3b3b;
-        text-decoration: none;
-    }
-
-    #program .interaction {
-        color: #B3B4B3;
-    }
-
-    #program .other {
-        background-color: #D1D1D1;
-    }
-
-    #program .meal {
-        background-color: #FF41FF;
-    }
-
-    #program .meal {
-        background-color: #A4C2F4;
-    }
-
-    #program .end {
-        background-color: #02FDFF;
-    }
-
-    #program .daily-announcement {
-        background-color: #D9EAD3;
-    }
-
-    #program .talk {
-        background-color: #FCE5CD;
-    }
-
-    #program .talk-nuts-and-bolts {
-        background-color: #D9DBBC;
-    }
-
-    #program .talk-hands-on {
-        background-color: #EF959D;
-    }
-
-    #program .talk-moonshot {
-        background-color: #B8D8BA;
-    }
-
-    #program .workshop {
-        background-color: #D9D2E9;
-    }
-
-    #program .tutorial {
-        background-color: #EAD1DC;
-    }
-
-    #program .bof {
-        background-color: #F9CB9C;
-    }
-
-    #program .keynote {
-        background-color: #FFE599;
-    }
-
-    #program .closing {
-        background-color: #A4C2F4;
-    }
-
 }
