@@ -1,6 +1,6 @@
 ---
-layout: page
+layout: default
 title: Virtual
-permalink: /virtual/
+pagination: 
 main_nav: true
 ---
