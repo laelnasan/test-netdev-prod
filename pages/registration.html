@@ -3,17 +3,20 @@ layout: default
 title: Registration
 pagination:
 main_nav: true
+enabled: true
 ---
 
-<div class="home news-container">
+<div class="home page-container">
 
-    <div class="left-panel">
-      {% include left-side.html %}
-    </div>
-    <div class="wrapper">
+  <div id="left-side">
+    {% include left-side.html %}
+  </div>
+  <div id="main-section">
+    <div class="main-content">
       {% include content/registration.html %}
     </div>
-    <div class="right-panel">
-      {% include right-side.html %}
-    </div>
   </div>
+  <div id="right-side">
+    {% include right-side.html %}
+  </div>
+</div>
