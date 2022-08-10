@@ -7,15 +7,17 @@ pagination:
 enabled: true
 ---
 
-<div class="home news-container">
+<div class="home page-container">
 
-    <div class="left-panel">
+    <div id="left-side">
         {% include left-side.html %}
     </div>
-    <div class="wrapper">
-        {% include content/home.html %}
+    <div id="main-section">
+        <div class="main-content">
+            {% include content/home.html %}
+        </div>
     </div>
-    <div class="right-panel">
+    <div id="right-side">
         {% include right-side.html %}
     </div>
 </div>
