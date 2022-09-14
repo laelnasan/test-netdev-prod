@@ -43,42 +43,6 @@ blockquote {
 	padding-left: 3em;
 }
 
-pre code.hljs {
-	font-size: 87.5%;
-}
-
-.page-divider {
-	$divider-color: $light-gray;
-	display: block;
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	border-top: 1px solid $divider-color;
-
-	.one {
-		position: relative;
-		top: -9px;
-		display: block;
-		background: $divider-color;
-		width: 18px;
-		height: 18px;
-		margin-left: auto;
-		margin-right: auto;
-		border-radius: 50%;
-	}
-
-	.two {
-		position: relative;
-		top: -26px;
-		display: block;
-		background: $white;
-		width: 16px;
-		height: 16px;
-		margin-left: auto;
-		margin-right: auto;
-		border-radius: 50%;
-	}
-}
 
 .tooltip {
 	border-bottom: 1px dotted $medium-gray;
@@ -152,6 +116,7 @@ pre code.hljs {
 		width: 940px;
 		margin-left: auto;
 		margin-right: auto;
+    margin-bottom: 20px;
 		@include clearfix;
 		position: relative;
 		font-family: $title-font-family;
@@ -159,7 +124,7 @@ pre code.hljs {
 
 	nav {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		float: none;
 		padding: .5em 0;
 
@@ -191,7 +156,7 @@ pre code.hljs {
 		text-align: right;
 		width: 100%;
 		padding: 0.25em 0;
-    font-size: 1.15em;
+    font-size: 1.35em;
     text-transform: uppercase;
 
 		@include media ($tablet) {
@@ -436,8 +401,6 @@ pre code.hljs {
 	.wrapper {
 		@include outer-container;
 	}
-
-	.footer-heading {}
 
 	/*
 	*	Site Navigation (left)
