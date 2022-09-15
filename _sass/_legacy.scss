@@ -80,6 +80,11 @@ h6 {
     font-family: "Share Tech Mono";
 }
 
+h1 {
+  font-size: 1.9em;
+  line-height: 1;
+}
+
 @font-face {
     font-family: "Share Tech Mono";
     src: local("Share Tech Mono"), local("ShareTechMono-Regular"),
@@ -602,7 +607,7 @@ h6 {
         border-bottom: 0.8px solid #c5c5c5;
     }
 
-    .news-article .date {
+    .date {
         margin: 5px 0 8px;
         font-size: 0.95em;
         font-family: "Share Tech Mono";
