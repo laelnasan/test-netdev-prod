@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Typography
 permalink: /typography/
 main_nav: false
