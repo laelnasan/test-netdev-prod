@@ -183,6 +183,12 @@ blockquote {
 			}
 		}
 	}
+
+  a:hover,
+  a:active,
+  a:focus {
+      text-decoration: none;
+  }
 }
 
 /*
@@ -401,6 +407,7 @@ blockquote {
 	.wrapper {
 		@include outer-container;
 	}
+
 
 	/*
 	*	Site Navigation (left)
