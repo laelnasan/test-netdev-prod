@@ -1,27 +1,6 @@
 
 /* netdev22 fonts */
 
-@font-face {
-    font-family: 'Cutive Mono';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Cutive Mono Regular'), local('CutiveMono-Regular'), url(https://fonts.gstatic.com/s/cutivemono/v5/N5odNRruTwjvCM8y77PhQZ0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Tinos';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Tinos'), url(https://fonts.gstatic.com/s/tinos/v9/R0GUby9C7Xd7F2g6Wjdydw.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Tinos';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Tinos Bold'), local('Tinos-Bold'), url(https://fonts.gstatic.com/s/tinos/v9/3YkJL-56dKLNbFKy5GXN6PesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
-}
-
 /* netdev22.css contents */
 
 body {
@@ -34,7 +13,7 @@ body {
     outline: 0;
     color: #192322;
     background-color: #fff;
-    font-family: "Raleway", sans-serif;
+    font-family: sans-serif;
     line-height: 1.25;
     height: 100%;
 }
@@ -295,7 +274,6 @@ h1 {
     }
 
     .footer-content {
-        margin-left: 300px;
         font-size: 0.85em;
         font-family: "Share Tech Mono";
     }
@@ -309,7 +287,12 @@ h1 {
         color: #c5c5c5;
     }
 
+    .footer-content span {
+        margin: auto;
+    }
+
     .footer-content p {
+        text-align: center;
         color: #c0c0c0;
         margin: 0px;
     }
