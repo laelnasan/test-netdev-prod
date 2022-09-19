@@ -1,107 +1,73 @@
 <!-- right-side articles. inserted to id="right-side" -->
 
 <div>
-    <div class="side-block">
-        <div class="side-content">
-            <h2> Recent News </h2>
-            <p>
-                <a href="news.html?bronze-sponsor-zevenet">Bronze Sponsor, ZEVENET</a>
-                <br>[Tue, 26, July. 2022]
-            </p>
-            <p>
-                <a href="news.html?bronze-sponsor-mojatatu">Bronze Sponsor, Mojatatu</a>
-                <br>[Thu, 21, Jul. 2022]
-            </p>
-            <p>
-                <a href="news.html?platinum-sponsor-google">Platinum Sponsor, Google</a>
-                <br>[Tue, 12, Jul. 2022]
-            </p>
-            <p>
-                <a href="news.html?platinum-sponsor-juniper-networks">Platinum Sponsor, Juniper Networks</a>
-                <br>[Thu, 30, Jun. 2022]
-            </p>
-            <p>
-                <a href="news.html?media-sponsor-lwn">Media Sponsor, LWN.net</a>
-                <br>[Fri, 08, Jul. 2022]
-            </p>
+  <div class="side-block">
+    <div class="side-content">
+      <h2> Recent News </h2>
+      {% for post in site.categories.news limit:5 %}
+      <p>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <br>[{{ post.date | date: '%a, %d, %b. %Y' }}]
+      </p>
+      {% endfor %}
 
+      <br>
+      <hr />
+      <div class="btn-wrapper">
+        <button class="btn" onclick="displayOldNews()">
+          display old news
+        </button>
+      </div>
+      <div id="oldnews" style="display: none;">
+        <br>
 
-            <!-- <p><a href="news.html?Videos-are-up">Videos are up</a>
-          <br />[Tue, 31, Aug. 2021]
-        </p> -->
+        {% for post in site.categories.news offset:5 %}
+        <p>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <br>[{{ post.date | date: '%a, %d, %b. %Y' }}]
+        </p>
+        {% endfor %}
 
-
-
-            <br>
-            <hr />
-            <div class="btn-wrapper">
-                <button class="btn" onclick="displayOldNews()">
-                    display old news
-                </button>
-            </div>
-            <div id="oldnews" style="display: none;">
-                <br>
-
-                <p><a href="news.html?platinum-sponsor-juniper-networks">Platinum Sponsor, Juniper Networks</a>
-                    <br>[Thu, 30, Jun. 2022]
-                </p>
-
-                <p><a href="news.html?bronze-sponsor-tempesta">Bronze Sponsor, Tempesta</a>
-                    <br>[Fri, 24, Jun. 2022]
-                </p>
-
-                <p><a href="news.html?silver-sponsor-amd">Silver Sponsor, AMD</a>
-                    <br>[Wed, 15, Jun. 2022]
-                </p>
-
-                <p><a href="news.html?netdev-0x16-call-for-submissions">Netdev 0x16 Call for Submissions (CFS)</a>
-                    <br>[Tue, 7, Jun. 2022]
-                </p>
-
-                <!-- <p><a href="news.html?Community-Sponsor-IPsec-and-Network-Security-Association">Community Sponsor, IPsec and Network Security Association</a>
-                  <br />[Tue, 06, Jul. 2021]
-                </p> -->
-
-            </div>
-        </div>
-        <script>
-            function displayOldNews() {
-                if ($("#oldnews").css("display") == "none") {
-                    $(".btn-wrapper .btn").text("hide old news");
-                } else {
-                    $(".btn-wrapper .btn").text("display old news");
-                }
-                $("#oldnews").toggle();
-            };
-        </script>
+      </div>
     </div>
-    <div class="side-block">
-        <div class="side-content">
+    <script>
+      function displayOldNews() {
+        if ($("#oldnews").css("display") == "none") {
+          $(".btn-wrapper .btn").text("hide old news");
+        } else {
+          $(".btn-wrapper .btn").text("display old news");
+        }
+        $("#oldnews").toggle();
+      };
+    </script>
+  </div>
+  <div class="side-block">
+    <div class="side-content">
 
 
-            <h2>Important Dates</h2>
-            <table class="deadlines">
-                <tbody>
-                    <tr>
-                        <td>Closing of CFS</td>
-                        <td>Wed, Sept. 7, 2022</td>
-                    </tr>
-                    <tr>
-                        <td>Notification by</td>
-                        <td>Thu, Sept. 15, 2022</td>
-                    </tr>
-                    <tr>
-                        <td>Conference dates</td>
-                        <td>Oct 24th - 28th, 2022</td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- <p><br>
+      <h2>Important Dates</h2>
+      <table class="deadlines">
+        <tbody>
+          <tr>
+            <td>Closing of CFS</td>
+            <td>Wed, Sept. 7, 2022</td>
+          </tr>
+          <tr>
+            <td>Notification by</td>
+            <td>Thu, Sept. 15, 2022</td>
+          </tr>
+          <tr>
+            <td>Conference dates</td>
+            <td>Oct 24th - 28th, 2022</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- <p><br>
         <p><br>
         <p><br> -->
-        </div>
     </div>
-    <!-- <div class="side-block">
+  </div>
+  <!-- <div class="side-block">
       <div class="side-content">
         <h2>Important Dates</h2>
         <ul>

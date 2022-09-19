@@ -2,7 +2,7 @@
 layout: post
 title:  "Netdev 0x16 Call for Submissions"
 date:   2022-06-07 15:28:40 -0300
-categories: 
+categories: news 
 ---
 We are pleased to announce the opening of Call For Submissions(CFS) for Netdev 0x16. <br>
 

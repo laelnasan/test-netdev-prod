@@ -8,16 +8,16 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title:
+title: Netdev 0x16
 subtitle:
 email:
 name: 
 description: >
   Netdev 0x16 Copyright © 2014-2022 The Netdev Society.
+
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
-
 baseurl: /jekyll-sample-netdev.github.io # the subpath of your site, e.g. /blog/
 url: https://blog.expertise.dev # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
@@ -31,7 +31,7 @@ highlightjs_theme: "monokai-sublime"
 # Pagination Settings
 # https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
 pagination:
-  enabled: true
+  enabled: false
   per_page: 20
   permalink: "/page/:num/"
   sort_reverse: true
@@ -54,8 +54,8 @@ jekyll-archives:
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+  - cat: news
+    desc: "Netdev News"
 
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."

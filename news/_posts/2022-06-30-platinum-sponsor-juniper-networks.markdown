@@ -2,7 +2,7 @@
 layout: post
 title:  "Platinum Sponsor, Juniper Networks"
 date:   2022-06-30 15:28:40 -0300
-categories: 
+categories: news
 ---
 [Juniper Networks][juniper] simplifies the complexities of networking with products, solutions and services in the cloud era to transform the way we connect, work and live. We remove the traditional constraints of networking to enable our customers and partners to deliver automated, scalable and secure networks that connect the world.<br>
 

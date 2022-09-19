@@ -2,7 +2,7 @@
 layout: post
 title:  "Platinum Sponsor, Google"
 date:   2022-07-12 15:28:40 -0300
-categories: 
+categories: news
 ---
 [Google][google] believes that open source is good for everyone.<br>
 
