@@ -1,0 +1,65 @@
+# !!!Warning!!!: Please be aware that the order of description will affect the end result. 
+#
+# - type: platinum | gold | silver | bronze | media
+#   url: Sponsor's site URL
+#   img: The image name relative to assets/sponsors folder
+#   alt: The image alt
+
+
+##### Platinum
+
+# Juniper Networks
+- type: platinum
+  url: https://www.juniper.net/
+  img: juniper.png
+  alt: Juniper Networks logo
+
+# Google
+- type: platinum
+  url: https://opensource.google/
+  img: logo_Google_FullColor_1x_722x237px-s.png
+  alt: Google Logo
+
+##### Gold
+
+# Google
+- type: gold
+  url: https://opensource.google/
+  img: google-open-source-vertical-white-text-small.png
+  alt: Google Logo
+
+##### Silver
+
+# AMD
+- type: silver
+  url: https://www.amd.com
+  img: AMD_E_Blk_RGB-s.jpg
+  alt: AMD logo
+
+##### Bronze
+
+# Tempesta
+- type: bronze
+  url: https://tempesta-tech.com/
+  img: tempesta_technologies_logo-s.png
+  alt: Tempesta Technologies logo
+
+# Zevenet
+- type: bronze
+  url: https://www.zevenet.com/
+  img: Zevenet_Logo_official_bg_white.png
+  alt: Zevenet logo
+
+# Mojatatu
+- type: bronze
+  url: http://www.mojatatu.info/mojatatu
+  img: mojatatu.png
+  alt: Mojatatu Logo
+
+##### Media
+
+# LWN
+- type: media
+  url: https://lwn.net/
+  img: lwn-s.png
+  alt: LWN.net logo
