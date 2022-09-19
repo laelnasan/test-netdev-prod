@@ -7,4 +7,26 @@ enabled: true
 order: 5
 ---
 
-{% include content/sessions.html %}
+# Sessions
+
+*   [Talk](#TALK)
+
+*   [Tutorial](#TUTORIAL)
+
+*   [Workshop](#WORKSHOP)
+
+*   [Panel](#PANEL)
+
+*   [Keynote](#KEYNOTE)
+
+## Talk(s)
+
+TBD
+
+## Tutorial(s)
+
+TBD
+
+## Workshop(s)
+
+TBD
