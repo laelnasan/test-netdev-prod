@@ -1,7 +1,5 @@
 ---
 layout: post
-categories: news
-date: 2022-07-21
 title: Bronze Sponsor, Mojatatu
 ---
 

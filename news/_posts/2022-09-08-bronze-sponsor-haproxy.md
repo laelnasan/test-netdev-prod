@@ -1,7 +1,5 @@
 ---
 layout: post
-categories: news
-date: 2022-09-08
 title: Bronze Sponsor, HAProxy
 ---
 

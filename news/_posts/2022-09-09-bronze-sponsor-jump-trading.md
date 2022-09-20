@@ -1,7 +1,5 @@
 ---
 layout: post
-categories: news
-date: 2022-09-09
 title: Bronze Sponsor, Jump Trading
 ---
 

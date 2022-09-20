@@ -1,7 +1,5 @@
 ---
 layout: post
-categories: news
-date: 2022-06-07
 title: Netdev 0x16 Call for Submissions
 ---
 

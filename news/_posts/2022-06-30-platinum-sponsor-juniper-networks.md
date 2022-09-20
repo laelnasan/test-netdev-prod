@@ -1,7 +1,5 @@
 ---
 layout: post
-categories: news
-date: 2022-06-30
 title: Platinum Sponsor, Juniper Networks
 ---
 

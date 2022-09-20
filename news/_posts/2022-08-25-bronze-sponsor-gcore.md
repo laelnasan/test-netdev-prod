@@ -1,7 +1,5 @@
 ---
 layout: post
-categories: news
-date: 2022-08-25
 title: Bronze Sponsor, Gcore
 ---
 

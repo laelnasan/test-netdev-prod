@@ -1,7 +1,5 @@
 ---
 layout: post
-categories: news
-date: 2022-07-08
 title: Media Sponsor, LWN.net
 ---
 

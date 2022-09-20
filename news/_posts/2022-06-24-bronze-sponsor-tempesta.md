@@ -1,7 +1,5 @@
 ---
 layout: post
-categories: news
-date: 2022-06-24
 title: Bronze Sponsor, Tempesta
 ---
 
