@@ -30,7 +30,8 @@ order: 5
 <div id="{{ cat }}-sessions" style="display: true;">
 
   {% if site.categories[cat] %}
-  {% for post in site.categories[cat] %}
+  {% assign posts = site.categories[cat] | reverse %}
+  {% for post in posts %}
 
   <div class="session-article">
     <h3 class="session-title">
