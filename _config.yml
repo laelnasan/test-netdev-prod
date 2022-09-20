@@ -61,6 +61,16 @@ descriptions:
   - cat: sessions
     desc: "NetdevConf Sessions"
 
+  # Session types
+  - cat: talk
+    desc: "session type"
+
+  - cat: tutorial
+    desc: "session type"
+
+  - cat: workshop
+    desc: "session type"
+
 # Social icons and sharing options
 #
 # Social settings are used in two places:
