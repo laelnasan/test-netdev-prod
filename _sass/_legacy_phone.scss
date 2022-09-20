@@ -9,7 +9,7 @@ font-family: 'Share Tech Mono';
 src: local('Share Tech Mono'), local('ShareTechMono-Regular'), url(../assets/fonts/Share-TechMono.ttf) format('truetype');
 }
 
-@media screen and ( max-width:700px )
+@media screen and ( max-width:767px )
 {
 /*-- netdev 2.2 small screen css --*/
 
@@ -40,7 +40,7 @@ text-decoration: none;
 ul.navi li a:hover{
 background: #444;
 }
-#toggle{
+#js-navigation-menu{
 display: none;
 }
 

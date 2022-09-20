@@ -1,7 +1,7 @@
 <div id="logo">
   <div class="wrapper">
     <a href="{{ site.baseurl }}/">
-      <img src="{{ site.cover | prepend: site.baseurl }}" alt=""/>
+      <img src="{{ site.cover | prepend: site.baseurl }}" alt="" />
     </a>
   </div>
 </div>
@@ -12,9 +12,15 @@
       <i class="fa fa-bars"></i>
     </a>
     <nav role="navigation">
-      <ul id="js-navigation-menu" class="navigation-menu show">
+      <ul id="js-navigation-menu" class="navigation-menu">
         {% include nav_links.html %}
       </ul>
     </nav>
   </div>
-</header>
+</header><!-- header. inserted to id="header" -->
+
+<div id="logo-phone">
+  <div class="wrapper">
+    <img src="{{ site.cover | prepend: site.baseurl }}" alt="" />
+  </div>
+</div>
