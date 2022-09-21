@@ -1,5 +1,4 @@
 ---
-layout: session
 title: RDMA programming tutorial
 label: Moonshot
 authors:

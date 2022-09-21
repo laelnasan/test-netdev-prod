@@ -60,7 +60,6 @@ lowercase).
 ```Markdown
 
 ---
-layout: session
 title: The session title
 label: The session label
 authors:

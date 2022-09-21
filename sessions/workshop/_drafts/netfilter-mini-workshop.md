@@ -1,5 +1,4 @@
 ---
-layout: session
 title: Netfilter mini workshop
 label: Nuts and Bolts
 authors:

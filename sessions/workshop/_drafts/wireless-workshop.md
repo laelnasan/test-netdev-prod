@@ -1,5 +1,4 @@
 ---
-layout: session
 title: Wireless Workshop
 label: Nuts and Bolts
 authors:

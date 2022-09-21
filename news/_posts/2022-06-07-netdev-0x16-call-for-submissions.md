@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Netdev 0x16 Call for Submissions
 ---
 

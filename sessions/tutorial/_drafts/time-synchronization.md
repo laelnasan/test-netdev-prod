@@ -1,5 +1,4 @@
 ---
-layout: session
 title: Introduction to time synchronization
 label: Nuts and Bolts
 authors:

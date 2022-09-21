@@ -1,5 +1,4 @@
 ---
-layout: session
 title: Learn how to program the Linux kernel data path with P4
 label: Hands On
 authors:

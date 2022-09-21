@@ -1,5 +1,4 @@
 ---
-layout: session
 title: How to sandbox a network application with Landlock
 label: Hands On
 authors:

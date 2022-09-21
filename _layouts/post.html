@@ -2,6 +2,9 @@
 layout: default
 ---
 <div>
+  {% assign posttype = page.categories | first %}
+  {% if posttype == "news" %}
+
   <h1 class="page-title">News</h1>
   <div class="posts-list">
     <h2>
@@ -12,4 +15,85 @@ layout: default
       {{ page.content }}
     </section>
   </div>
+
+  {% else %}
+
+  <h1 class="page-title">Session</h1>
+  <div class="session-content">
+    <span id='sessionId' style="display: none">{{ page.sessionId }}</span>
+    {% comment %}
+    <span class='ytVideoId' style="display: none"></span>
+    <span id='session-date' style="display: none"></span>
+    {% endcomment %}
+    <span id='session-tags' style="display: none">{{ page.categories | last }}, {{ page.label }}</span>
+
+    <h2 class="session-title">{{ page.title }}</h2>
+
+    <h2 class="topic-title">
+      {% assign type = page.categories | last %}
+      {% if type == "keynote" %}
+      Speaker
+      {% elsif type == "tutorial" %}
+      Instructors
+      {% elsif type == "workshop" %}
+      Chairs
+      {% else %}
+      Speakers
+      {% endif %}
+    </h2>
+    <span id='sessionSpeakerContent'>
+      <p>
+        {% for author in page.authors %}
+        {{ author }}<br />
+        {% endfor %}
+      </p>
+    </span>
+
+
+    <h2 class="topic-title">Label</h2>
+    <p>{{ page.label }}</p>
+
+
+    <h2 class="topic-title">Session Type</h2>
+    <p>{{ page.categories | last | capitalize }}</p>
+
+
+    <h2 class="topic-title">Contents</h2>
+    <ul>
+      {% assign slides = page.contents | where: "type", "slides" | map: "href" %}
+      {% assign papers = page.contents | where: "type", "paper" | map: "href" %}
+      {% assign reports = page.contents | where: "type", "report" | map: "href" %}
+      {% assign videos = page.contents | where: "type", "video" | map: "href" %}
+      <!-- initialize counters: {% increment s %} {% increment p %} {% increment r %} {% increment v %} -->
+
+      {% for slide in slides %}
+      <li><a href="{{ slide }}">
+          slides {% if forloop.first == false or forloop.last == false %}{% increment s %}{% endif %}
+        </a></li>
+      {% endfor %}
+      {% for paper in papers %}
+      <li><a href="{{ paper }}">
+          paper {% if forloop.first == false or forloop.last == false %}{% increment p %}{% endif %}
+        </a></li>
+      {% endfor %}
+      {% for report in reports %}
+      <li><a href="{{ report }}">
+          report {% if forloop.first == false or forloop.last == false %}{% increment r %}{% endif %}
+        </a></li>
+      {% endfor %}
+      {% for video in videos %}
+      <li><a href="{{ video }}">
+          video {% if forloop.first == false or forloop.last == false %}{% increment v %}{% endif %}
+        </a></li>
+      {% endfor %}
+    </ul>
+
+    <h2 class="topic-title">Description</h2>
+    <section class="post-excerpt">
+      {{ page.content }}
+    </section>
+
+  </div>
+
+  {% endif %}
 </div>

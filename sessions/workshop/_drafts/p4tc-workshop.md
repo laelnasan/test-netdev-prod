@@ -1,5 +1,4 @@
 ---
-layout: session
 title: P4TC Workshop
 label: Nuts and Bolts
 authors:

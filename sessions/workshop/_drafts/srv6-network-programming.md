@@ -1,5 +1,4 @@
 ---
-layout: session
 title: SRv6 Network Programming in Linux Kernel
 label: Nuts and Bolts
 authors:
