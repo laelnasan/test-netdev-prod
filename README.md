@@ -201,7 +201,7 @@ descriptions:
 ### Sponsors
 
 Sponsors are described in the `sponsors` list. The grouping is not strictly
-necessary, i.e. you can intercalate types of sponsors but be aware that Jekyll
+necessary, i.e. you can add definitions in any given order, but be aware that Jekyll
 will try to group sponsors in the order of definition. If you define a silver
 sponsor before any gold one the resulting page will show silver sponsors before
 gold sponsors.
