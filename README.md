@@ -37,12 +37,50 @@ To add a news post, simply add a file in the `news/_posts` directory following t
 convention `YYYY-MM-DD-name-of-news.md` and include the necessary front matter.
 Take a look at the source examples to get an idea about how it works.
 
+```Markdown
+---
+title: Post Sample
+---
+
+{% comment %}
+  # news/_posts/2022-09-20-post-example.md
+  This block is a comment and will not be rendered in the final page.
+{% endcomment %}
+
+Your news content goes here
+
+```
 
 #### sessions
 
 Sessions may be created as drafts. Just create a file in
 `sessions/<type>/_drafts` where `<type>` is the session type (singular
 lowercase).
+
+```Markdown
+
+---
+layout: session
+title: The session title
+label: The session label
+authors:
+  - Author 1
+  - Author 2
+  - Author 3
+contents:
+  - type: video | paper | report | slides
+    href: url1
+  - type: video | paper | report | slides
+    href: url2
+---
+
+{% comment %}
+  # session/type/_drafts/name-of-your-file.md
+{% endcomment %}
+
+The description goes here.
+
+```
 
 Drafts are posts without date information (hence no file name convention) that
 are not supposed to be in a production build by default. Therefore, the option
