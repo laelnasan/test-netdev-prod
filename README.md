@@ -28,21 +28,25 @@ bundle install
 The netdevconf site presents two types of post: [news](#news) and
 [sessions](#sessions). The former follows the idea of a blog post, with a
 defined date and title. The latter, however, does not benefit from date
-information, and may be listed in order of creation, being closer to the
+information and may be listed in order of creation, being closer to the
 concept of a *draft* in Jekyll.
 
 #### news
 
-To add a news, simply add a file in the `news/_posts` directory following the
+To add a news post, simply add a file in the `news/_posts` directory following the
 convention `YYYY-MM-DD-name-of-news.md` and include the necessary front matter.
 Take a look at the source examples to get an idea about how it works.
 
 
 #### sessions
 
+Sessions may be created as drafts. Just create a file in
+`sessions/<type>/_drafts` where `<type>` is the session type (singular
+lowercase).
+
 Drafts are posts without date information (hence no file name convention) that
 are not supposed to be in a production build by default. Therefore, the option
-`--drafts` must be passed in order to Jekyll to render properly. 
+`--drafts` must be passed in order to Jekyll to render properly.
 
 ```bash
 # run jekyll server for local preview
@@ -68,22 +72,6 @@ categories: sessions <type>
 ```
 
 Not doing so will lead to Jekyll not rendering your content.
-
-### Sponsors
-
-Sponsors are described in the `sponsors` list. The grouping is not strictly
-necessary, i.e. you can intercalate types of sponsors but be aware that Jekyll
-will try to group sponsors in the order of definition. If you define a silver
-sponsor before any gold one the resulting page will show silver sponsors before
-gold sponsors.
-
-```yml
-sponsors:
-  - type: platinum | gold | silver | bronze | media
-    url: Sponsor's site URL
-    img: The logo location relative to assets/sponsors/ folder
-    alt: The logo alt
-```
 
 ### Important Variables
 
@@ -171,6 +159,22 @@ descriptions:
 
   - cat: workshop
     desc: "session type"
+```
+
+### Sponsors
+
+Sponsors are described in the `sponsors` list. The grouping is not strictly
+necessary, i.e. you can intercalate types of sponsors but be aware that Jekyll
+will try to group sponsors in the order of definition. If you define a silver
+sponsor before any gold one the resulting page will show silver sponsors before
+gold sponsors.
+
+```yml
+sponsors:
+  - type: platinum | gold | silver | bronze | media
+    url: Sponsor's site URL
+    img: The logo location relative to assets/sponsors/ folder
+    alt: The logo alt
 ```
 
 ### Custom Page-Specific Javascript
