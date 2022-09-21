@@ -81,18 +81,18 @@ The description goes here.
 
 ```
 
-Drafts are posts without date information (hence no file name convention) that
-are not supposed to be in a production build by default. Therefore, the option
-`--drafts` must be passed in order to Jekyll to render properly.
+<!-- Drafts are posts without date information (hence no file name convention) that -->
+<!-- are not supposed to be in a production build by default. Therefore, the option -->
+<!-- `--drafts` must be passed in order to Jekyll to render properly. -->
 
-```bash
-# run jekyll server for local preview
-bundle exec jekyll serve --drafts
+<!-- ```bash -->
+<!-- # run jekyll server for local preview -->
+<!-- bundle exec jekyll serve --drafts -->
 
-# or build the site
-bundle exec jekyll build --drafts
+<!-- # or build the site -->
+<!-- bundle exec jekyll build --drafts -->
 
-```
+<!-- ``` -->
 
 ####  Categories
 

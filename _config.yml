@@ -25,6 +25,7 @@ logo: "/assets/header_image.jpg"
 permalink: none
 
 # Build settings
+show_drafts: true
 markdown: kramdown
 # inter_post_navigation: false
 highlightjs_theme: "monokai-sublime"
