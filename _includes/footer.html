@@ -17,12 +17,12 @@
         <div class="sponso">
           <h2 class="footer-title"> Sponsors </h2>
 
-          {% assign types = site.data.sponsors | map: "type" | uniq %}
+          {% assign types = site.sponsors | map: "type" | uniq %}
           {% for type in types %}
           <div class="sponso-area">
             <h3 class="footer-title"> {{ type | capitalize }}: </h3>
 
-            {% assign sponsors = site.data.sponsors | where: "type", type %}
+            {% assign sponsors = site.sponsors | where: "type", type %}
             {% for sponsor in sponsors %}
             <a href="{{ sponsor.url }}">
               <img class="logo" alt="{{ sponsor.alt }}" src="{{ site.baseurl }}/assets/sponsors/{{ sponsor.img }}" />
