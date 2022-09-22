@@ -7,12 +7,12 @@ enabled: true
 order: 7
 ---
 
-# Sample example
+# Test Schedule Page
 
 {% for slot in site.data.schedule %}
 {% if slot.decision == "Accepted and Anounced" %}
 
-### {{ slot.title }}
+## {{ slot.title }}
   {% assign title = "Speaker" %}
 
   {% for author in slot.authors %}
@@ -37,6 +37,7 @@ order: 7
 ### Description
 {{ slot.abstract }}
 
+{% if forloop.last == false %}---{% endif %}
 {% endif %}
 {% endfor %}
 
