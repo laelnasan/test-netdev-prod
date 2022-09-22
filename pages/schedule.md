@@ -7,10 +7,43 @@ enabled: true
 order: 7
 ---
 
-Check back later for the conference schedule.
+# Test Schedule Page
 
-<br><br>
+{% for slot in site.data.schedule %}
+{% if slot.decision == "Accepted and Anounced" %}
+
+## {{ slot.title }}
+  {% assign title = "Speaker" %}
+
+  {% for author in slot.authors %}
+  {% if forloop.first %}
+  {% if forloop.last %}
+  {% assign plural = ":" %}
+  {% else %}
+  {% assign plural = "s:" %}
+  {% endif %}
+  {{ plural | prepend: title }}
+  {% endif %}
+
+  {% if forloop.first == false %} and {% endif %}{{ author.first }} {{ author.last }}
+  {% endfor %}
+
+### Type
+{{ slot.options.submission-type }}
+
+### Label
+{{ slot.options.submission-label }}
+
+### Description
+{{ slot.abstract }}
+
+{% if forloop.last == false %}---{% endif %}
+{% endif %}
+{% endfor %}
+
 {% comment %}
+Check back later for the conference schedule.
+<br><br>
 
 # Schedule
 

@@ -4,7 +4,7 @@
 # documentation.
 
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll site to Pages
+name: Deploy Staging Jekyll site to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -33,9 +33,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Fetch Schedule
+        # set environment variables for schedule update
+        env:
+          H_URL: ${{ secrets.hotcrp_url }}
+          H_USER: ${{ secrets.hotcrp_user }}
+          H_PWD: ${{ secrets.hotcrp_password }}
         # rewrites _data/schedule and commit if there are any changes
         run: |
-          echo '"test": "this is just a test"' > _data/schedule.json
+          bash update-schedule.sh
           [ -n "$(git diff HEAD -- _data/schedule.json)" ] \
           && git config user.name github-actions \
           && git config user.email github-actions@github.com \

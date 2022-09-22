@@ -1,1 +1,53 @@
-"test": "this is just a test"
+[
+    {
+        "pid": 1,
+        "title": "Session Test for Github Actions",
+        "decision": "Accepted and Anounced",
+        "status": "Accepted and Anounced",
+        "submitted": true,
+        "submitted_at": 1663869039,
+        "authors": [
+            {
+                "email": "lael.santos@expertisesolutions.com.br",
+                "first": "Lael N.",
+                "last": "Santos",
+                "affiliation": "Expertise Solutions"
+            },
+            {
+                "email": "test@expertisesolutions.com.br",
+                "first": "Expertise",
+                "last": "Solutions",
+                "affiliation": "Expertise Solutions",
+                "contact": true
+            }
+        ],
+        "abstract": "This is just a test",
+        "options": {
+            "submission-type": "Talk",
+            "submission-label": "Moonshot"
+        }
+    },
+    {
+        "pid": 2,
+        "title": "Second Test",
+        "decision": "Accepted and Anounced",
+        "status": "Accepted and Anounced",
+        "submitted": true,
+        "submitted_at": 1663868906,
+        "authors": [
+            {
+                "first": "Lael Snantos",
+                "last": "N."
+            },
+            {
+                "last": "Expertise"
+            }
+        ],
+        "abstract": "Another test",
+        "options": {
+            "submission-type": "Workshop",
+            "submission-label": "Nuts and Bolts",
+            "estimated-length-time-presentation": 90
+        }
+    }
+]
