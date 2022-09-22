@@ -12,12 +12,14 @@ getfn="json"
 curl "$H_URL?post=.empty" \
   -b $cookiesfile -c $cookiesfile \
   -F "email=$H_USER" -F "password=$H_PWD" -F "signin=Sign in" > /dev/null 2>&1
+
 curl "$H_URL?postlogin=1" \
   -b $cookiesfile -c $cookiesfile > /dev/null 2>&1
 
 # parse the post code and format the search URL
 post=$(curl -sS "$H_URL" -b $cookiesfile -c $cookiesfile | sed -n 's/.*amp;post=\([A-Za-z0-9][A-Za-z0-9]*\)".*/\1/p')
-req="$H_URL/search?q=&t=&post=$post&action=get-$getfn"
+req="$H_URL/search?q=&t=s&post=$post&action=get-$getfn"
+pap=$(curl -sS $req -b $cookiesfile -c $cookiesfile | sed -n 's/.*id="p\([0-9][0-9]*\)".*/\1/p')
 
 # fetch data
 curl -sS \
@@ -30,10 +32,10 @@ curl -sS \
   -F "tagcr_method=schulze" \
   -F "tagcr_sorce=" \
   -F "assignfn=auto" \
-  -F "markpc=$H_USER" \
+  -F "markpc=none" \
   -F "decision=" \
   -F "recipes=au" \
-  -F "pap=1" \
+  -F "pap=$pap" \
   "$req" \
   -b $cookiesfile -c $cookiesfile \
   --header "Cache-Control: max-age=0" \
