@@ -36,7 +36,7 @@ jobs:
         # rewrites _data/schedule and commit if there are changes
         run: |
           echo '"test": "this is just a test"' > _data/schedule.json
-          [ -n "$(git diff HEAD -- _data/schedule.json)" ] && git -c "user.name github-actions" -c "user.email github-actions@github.com" commit -am "update schedule" && git push
+          [ -n "$(git diff HEAD -- _data/schedule.json)" ] && git -c "user.name=github-actions" -c "user.email=github-actions@github.com" commit -am "update schedule" && git push
       - name: Setup Ruby
         uses: ruby/setup-ruby@0a29871fe2b0200a17a4497bae54fe5df0d973aa # v1.115.3
         with:
