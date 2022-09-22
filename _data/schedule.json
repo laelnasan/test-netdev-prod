@@ -17,7 +17,7 @@
 
 <div class="homegrp">
 Welcome to the hotcrp submissions site.</div><div class="homegrp">Sign in to submit or review papers.</div><hr class="home" />
-<div class="homegrp foldo" id="homeacct"><form method="post" action="../?post=964qjsa5oa5r" enctype="multipart/form-data" accept-charset="UTF-8"><div class="f-contain"><div class="f-i"><label for="signin_email">Email</label><input type="email" name="email" value="" size="36" id="signin_email" class="fullw" autocomplete="username" tabindex="1" /></div>
+<div class="homegrp foldo" id="homeacct"><form method="post" action="../?post=2tlfd9rousca" enctype="multipart/form-data" accept-charset="UTF-8"><div class="f-contain"><div class="f-i"><label for="signin_email">Email</label><input type="email" name="email" value="" size="36" id="signin_email" class="fullw" autocomplete="username" tabindex="1" /></div>
 <div class="f-i fx"><div class="floatright"><a href="" class="n x small ui js-forgot-password">Forgot your password?</a></div><label for="signin_password">Password</label><input type="password" name="password" value="" size="36" id="signin_password" class="fullw" autocomplete="current-password" tabindex="1" /></div>
 <div class="popup-actions"><input type="submit" id="signin_signin" class="btn btn-primary" name="signin" value="Sign in" /></div><p class="hint">New to the site? <a href="" class="ui js-create-account">Create an account</a></p></div></form></div>
 <hr class="home" /><div class="homegrp" id="homeau"><h4>Submissions: &nbsp;</h4> <span class='deadline'>The site is not open for submissions at the moment.</span></div>
@@ -27,6 +27,6 @@ Welcome to the hotcrp submissions site.</div><div class="homegrp">Sign in to sub
   <hr class="c"></div>
 <!--[if lt IE 9]><script src="../scripts/jquery-1.12.4.min.js?mtime=1663866597"></script><![endif]-->
 <![if !IE|gte IE 9]><script src="../scripts/jquery-3.3.1.min.js?mtime=1663866597"></script><![endif]>
-<script>siteurl="..\/";siteurl_suffix="";siteurl_postvalue="964qjsa5oa5r";siteurl_cookie_params="";assetsurl="..\/";hotcrp_user={};</script><script src="../scripts/script.js?mtime=1663866597"></script>
-<script>hotcrp_load.time(240,0);hotcrp_deadlines.init({"now":1663870298,"email":null,"sub":{"open":false,"sub":0,"blind":true}});focus_within($("#login"));window.scroll(0,0)</script></body>
+<script>siteurl="..\/";siteurl_suffix="";siteurl_postvalue="2tlfd9rousca";siteurl_cookie_params="";assetsurl="..\/";hotcrp_user={};</script><script src="../scripts/script.js?mtime=1663866597"></script>
+<script>hotcrp_load.time(240,0);hotcrp_deadlines.init({"now":1663870370,"email":null,"sub":{"open":false,"sub":0,"blind":true}});focus_within($("#login"));window.scroll(0,0)</script></body>
 </html>
