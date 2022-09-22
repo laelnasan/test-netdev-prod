@@ -3,7 +3,7 @@ layout: default
 title: Participate
 pagination:
 main_nav: true
-order: 7
+order: 8
 ---
 
 # Overview

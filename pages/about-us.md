@@ -3,7 +3,7 @@ layout: default
 title: About Us
 main_nav: true
 enabled: true
-order: 8
+order: 9
 ---
 
 # About Us
