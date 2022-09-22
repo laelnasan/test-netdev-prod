@@ -35,7 +35,7 @@ jobs:
       - name: Fetch Schedule
         # set environment variables for schedule update
         env:
-          H_URL: http://137.184.205.43:9160/
+          H_URL: http://137.184.205.43:9160
           H_USER: ${{ secrets.hotcrp_user }}
           H_PWD: ${{ secrets.hotcrp_password }}
         # rewrites _data/schedule and commit if there are any changes
