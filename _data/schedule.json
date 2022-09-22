@@ -5,28 +5,36 @@
 <meta name="google" content="notranslate">
 <link rel="stylesheet" type="text/css" href="../stylesheets/style.css?mtime=1663866597">
 <link rel="icon" type="image/png" href="../images/review24.png">
-<title>Sign in - hotcrp</title>
+<title>hotcrp</title>
 </head>
 <body id="home">
-<div id="prebody"><div id="header"><div id="header_site" class="header_site_home"><h1><a class="qq" href="../"><span class="header-site-name">hotcrp</span></a></h1></div><div id="header_right"><div id="maindeadline" class="hidden"></div></div><div id="header_page"><h1>Sign in</h1></div><table class="vbar"><tr><td class="vbar gopaper"></td></tr></table>  <hr class="c"></div>
+<div id="prebody"><div id="header"><div id="header_site" class="header_site_home"><h1><a class="qq" href="../"><span class="header-site-name">hotcrp</span></a></h1></div><div id="header_right"><a class="q" href="../profile"><strong>test@expertisesolutions.com.br</strong></a> &nbsp; <a href="../profile">Profile</a> <span class="barsep">·</span> <a href="../help">Help</a> <span class="barsep">·</span> <a href="../?signout=1&amp;post=fi0t7ofn8h6d" class="nw">Sign out</a><div id="maindeadline" class="hidden"></div></div><hr class="c"><table class="vbar"><tr><td class="vbar gopaper"><form method="get" action="../paper" accept-charset="UTF-8" class="gopaper"><input type="text" name="p" value="" id="quicksearchq" size="10" placeholder="(All)" class="papersearch need-autogrow" />&nbsp; <input type="submit" class="btn" value="Search" /></form></td></tr></table>  <hr class="c"></div>
 <div id="initialmsgs">
-</div>
+<div class="msg msg-warning"><p><a href="../settings/basics">Set the conference abbreviation</a> to a short name for your conference, such as “OSDI ’14”.</p></div></div>
 </div>
 <div id="body" class="body">
-<div class="homeside"><noscript><div class="homeinside"><strong>This site requires JavaScript.</strong> Many features will work without JavaScript, but not all.<br /><a class="small" href="https://github.com/kohler/hotcrp/">Report bad compatibility problems</a></div></noscript><div class="homeinside"><h4>Conference information</h4><ul><li><a href="../users?t=pc">Program committee</a></li></ul></div></div>
+<div id='clock_drift_container'></div><div class="homeside"><noscript><div class="homeinside"><strong>This site requires JavaScript.</strong> Many features will work without JavaScript, but not all.<br /><a class="small" href="https://github.com/kohler/hotcrp/">Report bad compatibility problems</a></div></noscript><div class="homeinside"><h4>Administration</h4><ul style="margin-bottom:0.75em"><li><a href="../settings">Settings</a></li><li><a href="../users?t=all">Users</a></li><li><a href="../autoassign">Assignments</a></li><li><a href="../mail">Mail</a></li><li><a href="../log">Action log</a></li></ul><h4>Conference information</h4><ul><li><a href="../users?t=pc">Program committee</a></li></ul></div></div>
 
-<div class="homegrp">
-Welcome to the hotcrp submissions site.</div><div class="homegrp">Sign in to submit or review papers.</div><hr class="home" />
-<div class="homegrp foldo" id="homeacct"><form method="post" action="../?post=2tlfd9rousca" enctype="multipart/form-data" accept-charset="UTF-8"><div class="f-contain"><div class="f-i"><label for="signin_email">Email</label><input type="email" name="email" value="" size="36" id="signin_email" class="fullw" autocomplete="username" tabindex="1" /></div>
-<div class="f-i fx"><div class="floatright"><a href="" class="n x small ui js-forgot-password">Forgot your password?</a></div><label for="signin_password">Password</label><input type="password" name="password" value="" size="36" id="signin_password" class="fullw" autocomplete="current-password" tabindex="1" /></div>
-<div class="popup-actions"><input type="submit" id="signin_signin" class="btn btn-primary" name="signin" value="Sign in" /></div><p class="hint">New to the site? <a href="" class="ui js-create-account">Create an account</a></p></div></form></div>
-<hr class="home" /><div class="homegrp" id="homeau"><h4>Submissions: &nbsp;</h4> <span class='deadline'>The site is not open for submissions at the moment.</span></div>
-<hr class="c" />
-</div>
-<div id="footer"><div id="footer_crp"><a href="http://read.seas.harvard.edu/~kohler/hotcrp/">HotCRP</a><!-- Version 2.102 --></div>
-  <hr class="c"></div>
+<div class="homegrp" id="homelist"><form method="get" action="../search" accept-charset="UTF-8"><h4><a class="qq" href="../search">Search</a>: &nbsp;&nbsp;</h4><input type="text" name="q" value="" id="homeq" size="32" title="Enter paper numbers or search terms" class="papersearch" placeholder="(All)" /> &nbsp;in&nbsp; <select name="t" data-default-value="s"><option value="s" selected="selected">Submitted papers</option><option value="all">All papers</option><option value="r">Your reviews</option><option label=" " disabled="disabled"></option><option value="a">Your submissions</option></select>
+    &nbsp; <input type="submit" class="btn" value="Search" /></form></div>
+<hr class="home" />
+<div class='homegrp' id='homerev'>
+<h4>Reviews: &nbsp;</h4>   <span class='hint'>As an administrator, you may review <a href='../search?q=&amp;t=s'>any submitted paper</a>.</span><br />
+<a href="../reviewprefs">Review preferences</a> <span class='barsep'>·</span> <a href="../offline">Offline reviewing</a><div class="homegrp has-fold fold20c" id="homeactivity" data-fold-session="foldhomeactivity"><a data-fold-target="20" class="ui q js-foldup" href="#"><span class="expander"><span class="in0 fx20"><svg class="licon" width="0.75em" height="0.75em" viewBox="0 0 16 16" preserveAspectRatio="none"><path d="M1 1L8 15L15 1z" /></svg></span><span class="in1 fn20"><svg class="licon" width="0.75em" height="0.75em" viewBox="0 0 16 16" preserveAspectRatio="none"><path d="M1 1L15 8L1 15z" /></svg></span></span></a><h4><a href="" class="x homeactivity ui js-foldup" data-fold-target="20">Recent activity<span class='fx20'>:</span></a></h4></div></div>
+<hr class="home" />
+<div class="homegrp" id="homeau"><h4>Your Submissions: &nbsp;</h4> <strong><a href='../paper/new'>New submission</a></strong> <span class='deadline'>(No deadline)</span><br />
+<span class='hint'>As an administrator, you can start a submission regardless of deadlines and on behalf of others.</span><div class='g'></div>
+<table class="pltable has-hotlist has-fold fold5c fold7c fold8c" data-hotlist="{&quot;ids&quot;:&quot;1&quot;,&quot;listid&quot;:&quot;p\/a\/&quot;,&quot;description&quot;:&quot;Your submissions&quot;,&quot;urlbase&quot;:&quot;search?t=a&quot;}">
 <!--[if lt IE 9]><script src="../scripts/jquery-1.12.4.min.js?mtime=1663866597"></script><![endif]-->
 <![if !IE|gte IE 9]><script src="../scripts/jquery-3.3.1.min.js?mtime=1663866597"></script><![endif]>
-<script>siteurl="..\/";siteurl_suffix="";siteurl_postvalue="2tlfd9rousca";siteurl_cookie_params="";assetsurl="..\/";hotcrp_user={};</script><script src="../scripts/script.js?mtime=1663866597"></script>
-<script>hotcrp_load.time(240,0);hotcrp_deadlines.init({"now":1663870370,"email":null,"sub":{"open":false,"sub":0,"blind":true}});focus_within($("#login"));window.scroll(0,0)</script></body>
+<script>siteurl="..\/";siteurl_suffix="";siteurl_postvalue="fi0t7ofn8h6d";siteurl_cookie_params="";assetsurl="..\/";hotcrp_user={"email":"test@expertisesolutions.com.br","is_pclike":true,"cid":1};</script><script src="../scripts/script.js?mtime=1663866597"></script>
+<script>hotcrp_load.time(240,0);hotcrp_deadlines.init({"now":1663870665,"email":"test@expertisesolutions.com.br","is_admin":true,"is_author":true,"sub":{"open":false,"sub":0,"blind":true},"rev":{"blind":true},"revs":{"unnamed":{}}});$("#homeactivity").on("fold", function(e,opts) { opts.f || unfold_events(this); })</script>  <tbody class="pltable">
+  <tr class="pl k0" data-pid="1"><td class="pl pl_id"><a href="../paper/1" class="pnum taghl">#1</a></td><td class="pl pl_title"><a href="../paper/1" class="ptitle taghl">Session Test for Github Actions</a></td><td class="pl pl_status"><span class="pstat pstat_sub">Submitted</span></td></tr>
+  </tbody>
+</table><div class='g'></div><span class='deadline'>The site is not open for submissions at the moment.</span></div>
+<hr class="c" />
+</div>
+<div id="footer"><div id="footer_crp"><a href="http://read.seas.harvard.edu/~kohler/hotcrp/">HotCRP</a> v2.102 [ec1fa64...]</div>
+  <hr class="c"></div>
+</body>
 </html>
