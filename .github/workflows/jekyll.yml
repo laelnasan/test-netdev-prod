@@ -33,11 +33,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Fetch Schedule
-        # rewrites _data/schedule and commit if there are changes
+        # rewrites _data/schedule and commit if there are any changes
         run: |
           echo '"test": "this is just a test"' > _data/schedule.json
           [ -n "$(git diff HEAD -- _data/schedule.json)" ] \
-          && git -c "user.name=github-actions" -c "user.email=github-actions@github.com" commit -am "update schedule" \
+          && git config user.name github-actions \
+          && git config user.email github-actions@github.com \
+          && git add _data/schedule.json \
+          && git commit -m "update schedule" \
           && git push \
           || true
       - name: Setup Ruby

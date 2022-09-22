@@ -4,7 +4,7 @@ title: Schedule
 pagination:
 main_nav: true
 enabled: true
-order: 6
+order: 7
 ---
 
 Check back later for the conference schedule.
