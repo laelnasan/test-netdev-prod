@@ -71,4 +71,4 @@ jobs:
           password: ${{ secrets.deploy_password }}
           port: ${{ secrets.deploy_port }}
           source: "./_site/*"
-          target: "/var/www/html/"
+          target: "/var/www/html/x16/"
