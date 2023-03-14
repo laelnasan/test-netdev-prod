@@ -24,7 +24,6 @@ order: 7
   {% endif %}
   {{ plural | prepend: title }}
   {% endif %}
-
   {% if forloop.first == false %} and {% endif %}{{ author.first }} {{ author.last }}
   {% endfor %}
 
