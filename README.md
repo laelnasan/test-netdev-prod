@@ -1,10 +1,10 @@
 # Netdev 0x16 Jekyll Theme
 
-A port of the current layout of [netdevconf.info/0x16](www.netdevconf.info/0x16) to Jekyll.
+A port of the current layout of [netdevconf.info/0x16](https://netdevconf.info/0x16) to Jekyll.
 
 Built upon the [Centrarium theme](https://github.com/bencentra/centrarium).
 
-## Installation
+## Instructions
 
 Just [download this
 project](https://github.com/expertisesolutions/jekyll-sample-netdev.github.io)
@@ -13,16 +13,28 @@ directory, and **sessions** to `sessions/<type>/_drafts`. Create your pages
 with the proper Jekyll front matter (see [posts](#posts) bellow for an
 example).
 
-Don't forget to install Jekyll and other dependencies:
-```bash
-# cd into project directory
-cd netdevconf
-# install Bundler if you don't have it already
-gem install bundler
-# install jekyll
-bundle install
+This project uses Github Actions for deployment in staging (gh-pages) and production (VPS).
+It will listen for pushes/merges to the branches `master` and `production`. 
+
+During the staging integration the hotCPR instance will be curl'd for schedule information.
+In case of differences a new commit will be made on `master` with the new information.
+
+### Github Secrets
+The CI/CD pipeline makes use of some sensitive information that must be secured with 
+Github secrets. The following secrets are required:
+
+```
+HOTCRP_URL: ip and port of the hotCPR instance
+HOTCRP_USER: the email of an user with admin privileges
+HOTCRP_PASSWORD: the user password
+
+DEPLOY_HOST: the VPS ip address / domain name
+DEPLOY_PORT: the VPS ssh port (usually 22)
+DEPLOY_USER: the VPS user with root privileges
+DEPLOY_PASSWORD: the VPS user password
 ```
 
+The VPS credentials are used only for scp transfer.
 ### Posts
 
 The netdevconf site presents two types of post: [news](#news) and
