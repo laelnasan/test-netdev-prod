@@ -1,7 +1,6 @@
 ---
 title: Netdev 0x16 Call for Submissions
 ---
-test
 
 We are pleased to announce the opening of Call For Submissions(CFS) for Netdev 0x16.
 
