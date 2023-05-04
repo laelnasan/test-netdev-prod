@@ -30,7 +30,7 @@ order: 6
 <div id="{{ cat }}-sessions" style="display: true;">
 
   {% if site.categories[cat] %}
-  {% assign posts = site.categories[cat] | reverse %}
+  {% assign posts = site.categories[cat] | sort:"pid" %}
   {% for post in posts %}
 
   <div class="session-article">
