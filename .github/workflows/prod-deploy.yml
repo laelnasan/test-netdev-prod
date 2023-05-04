@@ -43,7 +43,7 @@ jobs:
         uses: actions/configure-pages@v2
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl '/0x16' --destination './_site/0x16'
+        run: ruby _scripts/import-sessions.rb && bundle exec jekyll build --baseurl '/0x16' --destination './_site/0x16'
         env:
           JEKYLL_ENV: production
       - name: Deploy to GitHub Pages

@@ -45,7 +45,7 @@ jobs:
           && git config user.name github-actions \
           && git config user.email github-actions@github.com \
           && git add _data/schedule.json \
-          && git commit -m "update schedule" \
+          && git commit -m "update session information" \
           && git push \
           || true
       - name: Setup Ruby
@@ -59,7 +59,7 @@ jobs:
         uses: actions/configure-pages@v2
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: ruby _scripts/import-sessions.rb && bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
