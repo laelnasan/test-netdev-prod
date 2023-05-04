@@ -18,8 +18,8 @@ description: >
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
-baseurl: /jekyll-sample-netdev.github.io # the subpath of your site, e.g. /blog/
-url: https://blog.expertise.dev # the base hostname & protocol for your site
+# baseurl: /jekyll-sample-netdev.github.io # the subpath of your site, e.g. /blog/
+# url: https://blog.expertise.dev # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/header_image.jpg"
 permalink: none
@@ -56,11 +56,10 @@ descriptions:
 #   img: The logo location relative to assets/sponsors folder
 #   alt: The logo alt
 
-
-##### Platinum
-
-# Juniper Networks
 sponsors:
+  ##### Platinum
+
+  # Juniper Networks
   - type: platinum
     url: https://www.juniper.net/
     img: juniper.png
@@ -72,13 +71,25 @@ sponsors:
     img: logo_Google_FullColor_1x_722x237px-s.png
     alt: Google Logo
 
+  # Intel
+  - type: platinum
+    url: https://www.intel.com/
+    img: Intel-logo-nobox-small.png
+    alt: Intel logo
+
   ##### Gold
 
-  # Google
+  # Meta
   - type: gold
-    url: https://opensource.google/
-    img: google-open-source-vertical-white-text-small.png
-    alt: Google Logo
+    url: https://engineering.fb.com/
+    img: meta.png
+    alt: Meta logo
+
+  # Bloomberg
+  - type: gold
+    url: https://www.bloomberg.com
+    img: bloomberg-s.png
+    alt: Bloomberg logo
 
   ##### Silver
 
@@ -107,6 +118,50 @@ sponsors:
     url: http://www.mojatatu.info/mojatatu
     img: mojatatu.png
     alt: Mojatatu Logo
+
+  # Secunet
+  - type: bronze
+    url: https://www.secunet.com
+    img: secunet-s.jpg
+    alt: secunet logo
+
+  # Gcore
+  - type: bronze
+    url: https://gcorelabs.com/
+    img: gcore-labs-s.png
+    alt: gcore logo
+
+  # bytedance
+  - type: bronze
+    url: https://www.bytedance.com
+    img: ByteDance-logo-RGB-fullcolor-s.png
+    alt: bytedance logo
+
+  # haproxy
+  - type: bronze
+    url: https://www.haproxy.com/
+    img: HAProxy-Logo-s.png
+    alt: haproxy logo
+
+  # nvidea
+  - type: bronze
+    url: https://www.nvidia.com
+    img: nvidia-s.jpg
+    alt: nvidia logo
+
+  # jump trading
+  - type: bronze
+    url: https://www.jumptrading.com/
+    img: jump-trading-s.jpg
+    alt: jump trading logo
+
+  # openvpn
+  - type: bronze
+    url: https://openvpn.net/
+    img: OpenVPN-Logo-orange-white-2018-s.png
+    alt: openvpn logo
+
+  ##### Community
 
   ##### Media
 
