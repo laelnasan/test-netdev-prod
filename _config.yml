@@ -18,8 +18,8 @@ description: >
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
-# baseurl: /jekyll-sample-netdev.github.io # the subpath of your site, e.g. /blog/
-# url: https://blog.expertise.dev # the base hostname & protocol for your site
+baseurl: /jekyll-sample-netdev.github.io # the subpath of your site, e.g. /blog/
+url: https://blog.expertise.dev # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/header_image.jpg"
 permalink: none
@@ -46,6 +46,9 @@ descriptions:
     desc: "session type"
 
   - cat: workshop
+    desc: "session type"
+
+  - cat: keynote
     desc: "session type"
 
 # Sponsors
