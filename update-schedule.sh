@@ -2,9 +2,9 @@
 cookiesfile="/tmp/hotcrp.cookies"
 getfn="json"
 
-# H_URL="http://137.184.205.43/"
-# H_USER="teste@test.com"
-# H_PWD="test"
+#H_URL="http://localhost:9160"
+#H_USER="test"
+#H_PWD="test"
 
 [ -e $cookiesfile ] && rm $cookiesfile
 
@@ -18,7 +18,8 @@ curl "$H_URL?postlogin=1" \
 
 # parse the post code and format the search URL
 post=$(curl -sS "$H_URL" -b $cookiesfile -c $cookiesfile | sed -n 's/.*amp;post=\([A-Za-z0-9][A-Za-z0-9]*\)".*/\1/p')
-req="$H_URL/search?q=&t=s&post=$post&action=get-$getfn"
+post=$(echo $post | awk '{print $1}')
+req="$H_URL/search?q=status%3DAnnounced&t=s&post=$post&action=get-$getfn"
 pap=$(curl -sS $req -b $cookiesfile -c $cookiesfile | sed -n 's/.*id="p\([0-9][0-9]*\)".*/\1/p')
 
 # fetch data
@@ -38,9 +39,9 @@ curl -sS \
   -F "pap=$pap" \
   "$req" \
   -b $cookiesfile -c $cookiesfile \
-  --header "Cache-Control: max-age=0" \
+  --header "Cache-Control: max-age=0,must-revalidate,private" \
   --header "Connection: keep-alive" \
-  --header "Content-Length: 1304" \
+  --header "Content-Length: 1417" \
   --header "Origin: $H_URL" \
   --header "Referer: $req" \
   --header "Sec-Fetch-Dest: document" \
