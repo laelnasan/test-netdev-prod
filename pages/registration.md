@@ -11,39 +11,38 @@ order: 3
 
 If you yearn for the old community tech driven conferences where you mingle with fellow Linux networking geeks then this would be it. While there will be a heavy Linux kernel influence we expect a lot of user space presence as well.
 
-{% comment %}
-
-Netdev 0x16 will be a fully-virtual conference, starting July 7th, 2021.  
+Netdev 0x16 is in Lisbon Portugal, starting October 24th, 2022. You can also attend virtually if you prefer.
   
-Registration is now open! Click the link below to register. Note that when registering, the Name, Email, and Country fields are mandatory for you to fill in, and the other ones are not.  
+Registration is now open! Click the link below to register. Note that when registering, the Name, Email, and Country fields are mandatory for you to fill in, and the other ones are not.
 
-## Click HERE to Register!
-
-{% endcomment %}
+<font size="6"><a href="virtual.html">Click HERE to Register!</a></font>
 
 - [Registration Fees](#RegistrationFees)
 - [Attendee Information & Guides](#Attendee-Information-and-Guides)
 - [Speakers & Students](#SpeakersAndStudents)
 - [Speaker Information & Guides](#Speaker-Information-and-Guides)
-{% comment %}- [Travel Information](#TravelInformation)
-{% endcomment %}- [Cancellation Policy](#cancellation-policy)
+{% comment %}- [Travel Information](#TravelInformation) {% endcomment %}
+- [Cancellation Policy](#cancellation-policy)
 
 ---
 
 ## Registration Fees
 
-  
-{% comment %}
+Students get a discount with valid student ID.
 
-The registration rates will be announced soon.
+- **Early Bird Rate** January 23rd - February 17th
+    - Physical - $150 USD
+    - Physical (student) - $40 USD
+    - Virtual - $50 USD
+    - Virtual (student) - $20 USD
 
-{% endcomment %} Students get 50% discount on the price listed below.
+- **Normal Rate** October 3rd - October 28th
+    - Physical - $300 USD
+    - Physical (student) - $100 USD
+    - Virtual - $100 USD
+    - Virtual (student) - $40 USD
 
-{% comment %}- **Early Bird Rate** January 23rd - February 17th
-    - $475 CAD
-{% endcomment %}- To be announced. {% comment %} **Virtual Conference Rate (remote participation)**  
-    $50 USD {% endcomment %}
-    
+{% comment %} - To be announced.  **Virtual Conference Rate (remote participation)** {% endcomment %} 
 
 ### Attendee Information & Guides
 
