@@ -99,15 +99,12 @@ The Netdev submission and program committee procedures are as follows:
       
     
 12.  The panel discusses the proposal until consensus is reached and an acceptance decision is made.
-    
-    There are three possible decisions:
-    
-    - **Accepted** - proposal accepted for inclusion in the conference.
-    - **Accepted with contingency** - proposal is accepted assuming that some contingencies are met. Examples of contingencies are: a request to the submitter to frame the subject in a certain way, eliminate overt references to commercial products, work with another submitter to ensure that potentially overlapping proposals are resolved.
-    - **Not accepted** - proposal is not accepted for inclusion
-    
-      
-      
+  
+There are three possible decisions:
+
+- **Accepted** - proposal accepted for inclusion in the conference.
+- **Accepted with contingency** - proposal is accepted assuming that some contingencies are met. Examples of contingencies are: a request to the submitter to frame the subject in a certain way, eliminate overt references to commercial products, work with another submitter to ensure that potentially overlapping proposals are resolved.
+- **Not accepted** - proposal is not accepted for inclusion
     
 13.  Once a decision is made, one member of the panel is chosen by the panel to write a Decision and Explanation (DAE) (this is not necessarily the program committee chair). This includes an explanation by the panel for its decision. If the proposal was accepted with contingencies then the panel will detail the contingencies. In the case a proposal is not accepted it is important to give useful feedback to the submitter for future proposals.  
       
