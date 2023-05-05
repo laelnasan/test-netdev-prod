@@ -47,17 +47,22 @@ layout: default
         {{ author }}<br />
         {% endfor %}
       </p>
+      {{ page.author_details }}
     </span>
 
+    {{ page.author_photo }}
 
+    {% if page.label %}
     <h2 class="topic-title">Label</h2>
     <p>{{ page.label }}</p>
+    {% endif %}
 
 
     <h2 class="topic-title">Session Type</h2>
     <p>{{ page.categories | last | capitalize }}</p>
 
 
+    {% if page.contents %}
     <h2 class="topic-title">Contents</h2>
     <ul>
       {% assign slides = page.contents | where: "type", "slides" | map: "href" %}
@@ -87,6 +92,7 @@ layout: default
         </a></li>
       {% endfor %}
     </ul>
+    {% endif %}
 
     <h2 class="topic-title">Description</h2>
     <section class="post-excerpt">
