@@ -40,7 +40,7 @@ jobs:
           H_PWD: ${{ secrets.hotcrp_password }}
         # rewrites _data/schedule and commit if there are any changes
         run: |
-          bash update-schedule.sh
+          bash _scripts/update-session-info.sh
           [ -n "$(git diff HEAD -- _data/schedule.json)" ] \
           && git config user.name github-actions \
           && git config user.email github-actions@github.com \
